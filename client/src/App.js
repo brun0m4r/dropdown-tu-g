@@ -1,6 +1,4 @@
-import logo from './logo.svg';
 import './App.css';
-import { Combobox } from './Components/Combobox';
 import { SearchBar } from './Components/SearchBar';
 
 function App() {

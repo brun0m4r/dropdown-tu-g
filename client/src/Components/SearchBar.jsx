@@ -38,7 +38,7 @@ export const SearchBar = () => {
     setFilterValue(e.target.value);
     if (e.target.value) {
       setFiltered(
-        filtered.filter((r) => {
+        info.filter((r) => {
           return r[selected]
             .toLowerCase()
             .includes(e.target.value?.toLowerCase());
