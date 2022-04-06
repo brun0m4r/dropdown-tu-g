@@ -15,7 +15,6 @@ export const SearchBar = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const perPage = 20;
   let indexOfLastCorp = currentPage * perPage;
-  let currentCorps = filtered.slice(0, indexOfLastCorp);
 
   const paged = (n) => {
     setCurrentPage(n);
@@ -24,10 +23,6 @@ export const SearchBar = () => {
   useEffect(() => {
     getInfo();
   }, []);
-
-  // useEffect(() => {
-  //   setSelected("codigo");
-  // }, [dropdown]);
 
   const getInfo = async () => {
     let api = (await axios.get("http://localhost:3001/empresas")).data;
