@@ -1,0 +1,30 @@
+[
+    {
+        "nombre": "Yolsa",
+        "razon social": "SRL",
+        "nit": 1234653,
+        "telefono": "+54936243562",
+        "codigo": "s454a65s43d2"
+    },
+    {
+        "nombre": "Bruno",
+        "razon social": "SA",
+        "nit": 1234653,
+        "telefono": "+54936243562",
+        "codigo": "s454a65s43d2"
+    },
+    {
+        "nombre": "Agus",
+        "razon social": "SI",
+        "nit": 1234653,
+        "telefono": "+54936243562",
+        "codigo": "s454a65s43d2"
+    },
+    {
+        "nombre": "Zoe",
+        "razon social": "SA",
+        "nit": 1234653,
+        "telefono": "+54936243562",
+        "codigo": "s454a65s43d2"
+    }
+]
