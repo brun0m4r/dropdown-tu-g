@@ -15,7 +15,7 @@ export const SearchBar = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const perPage = 20;
   let indexOfLastCorp = currentPage * perPage;
-  let currentCorps = filtered.slice(1, indexOfLastCorp);
+  let currentCorps = filtered.slice(0, indexOfLastCorp);
 
   const paged = (n) => {
     setCurrentPage(n);
@@ -25,9 +25,9 @@ export const SearchBar = () => {
     getInfo();
   }, []);
 
-  useEffect(() => {
-    setSelected("codigo");
-  }, [dropdown]);
+  // useEffect(() => {
+  //   setSelected("codigo");
+  // }, [dropdown]);
 
   const getInfo = async () => {
     let api = (await axios.get("http://localhost:3001/empresas")).data;
@@ -105,7 +105,7 @@ export const SearchBar = () => {
               }
               className="infinite-scroll"
             >
-              {filtered.map((e) => (
+              {filtered.slice(0, indexOfLastCorp).map((e) => (
                 <button
                   type="button"
                   key={e.id}
